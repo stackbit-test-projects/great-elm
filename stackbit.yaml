@@ -1,0 +1,38 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+publishDir: public
+pagesDir: src/data
+models:
+  product:
+    type: page
+    label: Product
+    folder: products
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: siteLink
+        label: Site Link
+      - type: image
+        name: imageLink
+        label: Image Link
+      - type: string
+        name: customWidth
+        label: Custom Width
+      - type: string
+        name: customTopPadding
+        label: Custom Top Padding
+  service:
+    type: page
+    label: Service
+    folder: services
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: image
+        name: imageLink
+        label: Image Link
